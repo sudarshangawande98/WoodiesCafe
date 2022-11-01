@@ -1,0 +1,84 @@
+/* ===================== FEEDBACK SECTION STARTED ==================== */
+@import url('https://fonts.googleapis.com/css?family=Montserrat&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #fef9f2;
+    font-family: 'Montserrat', sans-serif;
+    justify-items: baseline;
+}
+
+fieldset {
+    border: 2px solid gray;
+    border-radius: 5px;
+    width: 30%;
+    margin: auto;
+    padding: 20px;
+    margin-top: 30px;
+    /* background-image: linear-gradient(rgba(111, 137, 234, 0.953),rgba(237, 7, 7, 0.717)); */
+    background-color: whitesmoke;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    text-align: center;
+    padding: 20pxl;
+    background-color: #007BFF;
+
+    color: rgb(255, 255, 255);
+}
+
+button {
+    justify-content: center;
+    width: 40%;
+    border-radius: 5px;
+    border: 3px solid rgb(2, 1, 1);
+    background-color: #007BFF;
+}
+
+input {
+    width: 100%;
+    padding: 5px;
+    border: 2px solid rgb(0, 0, 0);
+    border-radius: 5px;
+    height: 70px;
+}
+
+.backvideo {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    z-index: -1;
+    margin-top: 225px;
+
+    width: 100vh;
+    display: flex;
+    background-size: cover;
+}
+
+/* .button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 200px;
+    border: 3px solid green;
+  } */
+
+#btninsert {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    width: 22%;
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+/* ===================== FEEDBACK SECTION ENDED ==================== */

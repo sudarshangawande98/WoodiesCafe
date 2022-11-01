@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Poppins:wght@100;300;400;500;600&display=swap");
+
+:root {
+  --main-color: #443;
+  --border-radius: 95% 4% 97% 5%/4% 94% 3% 95%;
+  --border-radius-hover: 4% 95% 6% 95%/95% 4% 92% 5%;
+  --border: .2rem solid var(--main-color);
+  --border-hover: .2rem dashed var(--main-color);
+}
+
+* {
+  font-family: "Poppins", sans-serif;
+  margin: 0; padding: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  text-transform: capitalize;
+  transition: all 0.2s linear;
+}
+
+html {
+  font-size: 62.5%;
+  overflow-x: hidden;
+  scroll-padding-top: 7rem;
+  scroll-behavior: smooth;
+}
+
+/* ================== MENU BUTTON STARTED ================== */
+#menu-btn {
+  font-size: 3rem;
+  color: var(--main-color);
+  cursor: pointer;
+  display: none;
+ }
+/* ==================== MENU BUTTON ENDED ===================== */
+
+/* ==================== MEDIA QUERIES STARTED ==================== */
+@media (max-width: 991px) {
+  html {
+    font-size: 55%;
+  }
+
+  .header {
+    padding: 2rem;
+  }
+
+  section {
+    padding: 2rem;
+  }
+}
+/* ----------------------------------------------- */
+@media (max-width: 768px) {
+  #menu-btn {
+    display: initial;
+  }
+
+  #menu-btn.fa-times {
+    transform: rotate(180deg);
+  }
+
+  .header .navbar {
+    position: absolute;
+    top: 99%; left: 0; right: 0;
+    background: #fff;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+  }
+
+  .header .navbar .active {
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
+  }
+
+  .header .navbar a {
+    display: block;
+    font-size: 2.2rem;
+    margin: 0;
+    padding: 1.5rem 2rem;
+  }
+
+  .home{
+    text-align: center;
+  }
+
+  .home .row .content h3{
+    font-size: 4rem;
+  }
+
+  .heading{
+    font-size: 6rem;
+  }
+
+  .heading span{
+    font-size: 2.3rem;
+  }
+
+  .menu .box-container .box{
+    margin-left: 0;
+    margin-top: 6rem;
+    flex-flow: column;
+    text-align: center;
+  }
+
+  .menu .box-container .box img{
+    margin-left: 0;
+    margin-top: -6rem;
+  }
+}
+/* ----------------------------------------------- */
+@media (max-width: 450px) {
+  html {
+    font-size: 50%;
+  }
+
+  .home .row .image img{
+    height: auto;
+    width: 100% ;
+  }
+}
+/* ====================== MEDIA QUERIES ENDED ====================== */
+
+
+
